@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kiber Assistant user manual — Italiano, English, Español.">
+<meta name="color-scheme" content="light">
+<title>Kiber Assistant — Manuale utente</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1c2c40;background:#f1f5f9;line-height:1.65;font-size:16px}
+*{box-sizing:border-box}body{margin:0}header{background:#11283f;color:white;border-bottom:4px solid #2dd4bf}header .bar{max-width:1080px;margin:auto;padding:22px 32px;display:flex;gap:24px;align-items:center;justify-content:space-between}.brand{font-weight:750;font-size:1.2rem;letter-spacing:.02em}.brand span{color:#77e4d4}.language-control{display:flex;gap:12px;align-items:center}label{font-weight:600;font-size:.9rem}select{font:inherit;border:1px solid #6c849c;border-radius:8px;background:white;color:#11283f;padding:9px 34px 9px 12px;cursor:pointer}main{max-width:1080px;margin:32px auto 64px;background:white;border:1px solid #dbe3eb;border-radius:14px;padding:36px 48px;box-shadow:0 8px 30px #11283f08}[hidden]{display:none!important}h1{font-size:2.2rem;line-height:1.2;letter-spacing:-.035em;margin-top:32px}h2{font-size:1.5rem;line-height:1.35;margin:42px 0 18px;padding-top:8px;scroll-margin-top:20px}h3{font-size:1.1rem;margin-top:28px}p{margin:16px 0}li{padding:4px 0}ol{padding-left:24px}strong{color:#11283f}.contents{display:flex;flex-wrap:wrap;gap:8px;padding-bottom:24px;border-bottom:1px solid #dbe3eb}.contents a{background:#e9f7f5;color:#155d58;padding:7px 12px;border-radius:7px;text-decoration:none;font-weight:600;font-size:.85rem}.contents a:hover{background:#c8eeea}.table-scroll{overflow-x:auto;margin:20px 0;border:1px solid #dbe3eb;border-radius:9px}table{border-collapse:collapse;width:100%;text-align:left;font-size:.94rem}th,td{padding:13px 16px;border-bottom:1px solid #e4eaf0;vertical-align:top}th{background:#eef3f8;color:#243f59}tr:last-child td{border-bottom:0}tbody tr:nth-child(even){background:#fafcfe}code{font-family:ui-monospace,monospace;white-space:normal;overflow-wrap:anywhere;background:#edf3f8;padding:4px 6px;border-radius:4px}hr{border:0;border-top:1px solid #dbe3eb;margin:36px 0}em{color:#596a7c;font-size:.9rem}a:focus-visible,select:focus-visible,.table-scroll:focus-visible{outline:3px solid #0f978a;outline-offset:4px}footer{max-width:1080px;margin:0 auto 32px;padding:0 32px;color:#596a7c;font-size:.85rem}footer a{color:#285c80}
+@media(max-width:650px){header .bar{padding:18px 20px;align-items:flex-start;flex-direction:column;gap:14px}main{margin:16px 10px 30px;padding:22px 18px;border-radius:10px}h1{font-size:1.8rem}h2{font-size:1.3rem}.language-control{width:100%;justify-content:space-between}th,td{padding:10px 12px}.contents{gap:6px}}
+@media print{body{background:white}header{background:white;color:#11283f;border-bottom:1px solid #ccc}header .bar{padding:10px 0}main{border:0;box-shadow:none;margin:0;padding:0;max-width:none}.contents,footer{display:none}h2,h3{break-after:avoid}tr{break-inside:avoid}.table-scroll{overflow:visible}select{border:0;appearance:none}}
+</style>
+</head>
+<body>
+<header><div class="bar"><div class="brand">KIBER <span>ASSISTANT</span></div><div class="language-control"><label id="language-label" for="language">Lingua</label><select id="language"><option value="it">Italiano</option><option value="en">English</option><option value="es">Español</option></select></div></div></header>
+<main id="manual-content"><article id="manual-it" lang="it"><nav class="contents" aria-label="Indice"><a href="#it-section-1">Messa a fuoco</a><a href="#it-section-2">Telecamere</a><a href="#it-section-3">Audio nei report</a><a href="#it-section-4">Didascalie</a><a href="#it-section-5">Problemi comuni</a></nav><h1>Kiber Assistant — Manuale utente</h1>
+<h2>Telecamere, messa a fuoco, audio e didascalie</h2>
+<p>Questa guida descrive le funzionalità riportate nei ticket forniti: controllo della messa a fuoco del KiberScope, selezione vocale della telecamera, uso dell'audio dei video nel report e descrizione delle fotografie durante una nota vocale.</p>
+<p><strong>Requisito per la messa a fuoco:</strong> KiberScope con firmware versione 2. La disponibilità delle altre funzioni dipende dalla versione dell'app installata; i ticket non indicano un numero di versione minimo.</p>
+<h2 id="it-section-1">1. Regolare la messa a fuoco</h2>
+<p>I controlli permettono di adattare la messa a fuoco del KiberScope alla scena ripresa, anche con la versione Narrow. Sono disponibili due modalità: automatica e manuale.</p>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Modalità</th><th scope="col">Come funziona</th><th scope="col">Controlli disponibili</th></tr>
+</thead><tbody>
+<tr><td>Automatica</td><td>La camera regola il fuoco nella zona centrale evidenziata da un rettangolo.</td><td>Scelta dell'ampiezza della zona di autofocus.</td></tr>
+<tr><td>Manuale</td><td>L'utente imposta la posizione della lente.</td><td>Cursore e cinque preset vocali.</td></tr>
+</tbody></table></div>
+<h3>Attivare la messa a fuoco automatica</h3>
+<ol>
+<li>Apri la finestra dei controlli di messa a fuoco.</li>
+<li>Attiva l'autofocus con il relativo pulsante, oppure pronuncia <strong>«FOCUS AUTO»</strong>.</li>
+<li>Inquadra il soggetto nella zona centrale indicata dal rettangolo.</li>
+<li>Se necessario, modifica l'ampiezza della zona con uno dei comandi seguenti.</li>
+</ol>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Comando</th><th scope="col">Zona utilizzata dall'autofocus</th></tr>
+</thead><tbody>
+<tr><td><strong>FOCUS STRETTO</strong></td><td>Zona centrale stretta; impostazione predefinita dell'ampiezza.</td></tr>
+<tr><td><strong>FOCUS NORMALE</strong></td><td>Zona centrale di ampiezza normale.</td></tr>
+<tr><td><strong>FOCUS LARGO</strong></td><td>Zona centrale più ampia.</td></tr>
+</tbody></table></div>
+<p>Quando l'autofocus è attivo, il cursore della messa a fuoco manuale è disabilitato e i preset vocali manuali non sono utilizzabili.</p>
+<h3>Impostare la messa a fuoco manuale</h3>
+<ol>
+<li>Nella stessa finestra, disattiva l'autofocus oppure pronuncia <strong>«FOCUS MANUALE»</strong>.</li>
+<li>Il rettangolo dell'autofocus scompare e il cursore diventa disponibile.</li>
+<li>Sposta il cursore fino a ottenere un'immagine nitida, oppure pronuncia uno dei preset elencati sotto.</li>
+<li>Per tornare alla regolazione automatica, pronuncia <strong>«FOCUS AUTO»</strong> o riattiva il pulsante.</li>
+</ol>
+<p>Il cursore varia da <strong>0,0</strong>, corrispondente al fuoco all'infinito, a <strong>13,0</strong>, per la messa a fuoco molto ravvicinata. I valori selezionabili sono:</p>
+<p><code>0 · 0,25 · 0,5 · 0,75 · 1 · 1,25 · 1,5 · 2 · 3 · 4 · 5 · 6 · 7 · 8 · 9 · 10 · 11 · 12 · 13</code></p>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Comando</th><th scope="col">Valore della lente</th><th scope="col">Distanza indicativa</th></tr>
+</thead><tbody>
+<tr><td><strong>FOCUS LONTANISSIMO</strong></td><td>0,0</td><td>Infinito; valore manuale predefinito.</td></tr>
+<tr><td><strong>FOCUS LONTANO</strong></td><td>0,5</td><td>Circa 2 m.</td></tr>
+<tr><td><strong>FOCUS MEDIO</strong></td><td>2</td><td>Circa 50 cm.</td></tr>
+<tr><td><strong>FOCUS VICINO</strong></td><td>6</td><td>Circa 17 cm.</td></tr>
+<tr><td><strong>FOCUS VICINISSIMO</strong></td><td>13</td><td>Circa 5 cm.</td></tr>
+</tbody></table></div>
+<p><strong>Le distanze sono indicative:</strong> non sono misure garantite dalla camera e possono variare anche molto in base a inclinazione, ambiente e illuminazione. Controlla sempre la nitidezza dell'immagine e, se necessario, regola il cursore. I valori della lente non sono distanze espresse in metri.</p>
+<h2 id="it-section-2">2. Cambiare telecamera con la voce</h2>
+<p>Puoi selezionare la telecamera frontale o posteriore del telefono, oppure quella del visore, pronunciando una delle espressioni riportate nella tabella. Le espressioni nella stessa riga sono alternative equivalenti.</p>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Telecamera desiderata</th><th scope="col">Comandi vocali in italiano</th></tr>
+</thead><tbody>
+<tr><td>Frontale del telefono</td><td><strong>camera frontale</strong>, <strong>camera davanti</strong>, <strong>camera anteriore</strong>, <strong>camera selfie</strong></td></tr>
+<tr><td>Posteriore del telefono</td><td><strong>camera principale</strong>, <strong>camera dietro</strong>, <strong>camera posteriore</strong>, <strong>camera retro</strong></td></tr>
+<tr><td>Visore</td><td><strong>camera visore</strong>, <strong>camera occhiali</strong>, <strong>camera headset</strong>, <strong>camera cyber</strong></td></tr>
+</tbody></table></div>
+<h3>Procedura</h3>
+<ol>
+<li>Se desideri usare la telecamera del visore, assicurati che il visore sia collegato.</li>
+<li>Pronuncia uno dei comandi della telecamera desiderata.</li>
+<li>Controlla che l'immagine visualizzata e la selezione nell'interfaccia corrispondano alla telecamera scelta.</li>
+</ol>
+<p>Il cambio vocale aggiorna immagine e selezione come il cambio tramite pulsanti. Se il visore non è collegato, l'app segnala che la selezione non è disponibile.</p>
+<h3>Visore con condivisione dello schermo del telefono</h3>
+<p><strong>Il passaggio a questa modalità tramite comando vocale è disabilitato</strong>, come indicato nell'aggiornamento del 16 ottobre riportato nei ticket.</p>
+<p>Per selezionarla, usa i controlli touch dell'app e completa le conferme richieste dall'app e dal sistema sul telefono.</p>
+<p>Le espressioni <strong>«camera schermo»</strong>, <strong>«camera display»</strong>, <strong>«camera condivisa»</strong> e <strong>«camera doppia»</strong> non attivano il cambio verso questa modalità.</p>
+<h2 id="it-section-3">3. Usare l'audio dei video nel report</h2>
+<p>L'audio dei video registrati viene utilizzato nella generazione del report insieme alle note vocali. <strong>Non serve registrare una nota audio separata per ripetere quanto già detto nel video.</strong></p>
+<ol>
+<li>Registra il video includendo il commento audio utile a documentare l'attività.</li>
+<li>Aggiungi eventuali note vocali se hai altre informazioni da fornire.</li>
+<li>Genera il report con la procedura abituale dell'app.</li>
+</ol>
+<p>Il report utilizza come fonti sia l'audio dei video registrati sia le note vocali. Un video privo di audio non fornisce contenuto parlato da utilizzare.</p>
+<h2 id="it-section-4">4. Descrivere una foto durante una nota vocale</h2>
+<p>Puoi scattare una fotografia anche durante una registrazione vocale. Ogni foto ha un intervallo dedicato in cui descriverla: il parlato della nota vocale non viene usato indistintamente come didascalia.</p>
+<h3>Procedura</h3>
+<ol>
+<li>Durante la nota vocale, scatta la fotografia.</li>
+<li>Osserva nel visore il promemoria e il conto alla rovescia dell'intervallo dedicato alla descrizione.</li>
+<li>Durante questo intervallo, descrivi la fotografia appena scattata.</li>
+<li>Al termine, la nota vocale precedente viene ripristinata automaticamente.</li>
+<li>Nel report, la descrizione viene associata alla fotografia corretta come didascalia.</li>
+</ol>
+<p><strong>Lo stato di pausa viene conservato:</strong> se la nota era in registrazione, riprende; se era in pausa, resta in pausa.</p>
+<p>Esempio di didascalia: «Dettaglio del raccordo sul lato sinistro, con tracce di usura vicino alla guarnizione». Pronuncia la descrizione durante il conto alla rovescia, distinguendola dal commento generale dell'attività.</p>
+<p>La durata dell'intervallo non è specificata nei ticket: fai riferimento al conto alla rovescia visibile nel visore.</p>
+<h2 id="it-section-5">5. Risolvere i problemi più comuni</h2>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Situazione</th><th scope="col">Verifica o azione</th></tr>
+</thead><tbody>
+<tr><td>Il cursore manuale è disabilitato.</td><td>Disattiva l'autofocus con <strong>FOCUS MANUALE</strong> o con il pulsante.</td></tr>
+<tr><td>Un preset di distanza non è utilizzabile.</td><td>Verifica che sia attiva la modalità manuale.</td></tr>
+<tr><td>Il rettangolo centrale non è visibile.</td><td>In modalità manuale è normale. Attiva <strong>FOCUS AUTO</strong> per usare la zona di autofocus.</td></tr>
+<tr><td>L'immagine non è nitida alla distanza indicata dal preset.</td><td>Le distanze sono approssimative. Regola il cursore verificando l'immagine.</td></tr>
+<tr><td>I nuovi controlli di messa a fuoco non sono disponibili.</td><td>Verifica che il KiberScope utilizzi il firmware versione 2.</td></tr>
+<tr><td>Non è possibile selezionare la telecamera del visore.</td><td>Verifica che il visore sia collegato; in caso contrario l'app segnala l'indisponibilità.</td></tr>
+<tr><td>«Camera schermo» non attiva la condivisione.</td><td>Il cambio vocale verso questa modalità è disabilitato. Usa il touch e completa le conferme.</td></tr>
+<tr><td>Dopo la didascalia, la nota vocale rimane in pausa.</td><td>Se era già in pausa prima dello scatto, questo comportamento è previsto.</td></tr>
+</tbody></table></div>
+<hr>
+<p><em>Guida ricavata dai ticket forniti, incluso l'aggiornamento del 16 ottobre sul cambio telecamera. Descrive il comportamento previsto dai ticket; non certifica la disponibilità delle funzioni in una specifica release dell'app.</em></p></article>
+<article id="manual-en" lang="en" hidden><nav class="contents" aria-label="Contents"><a href="#en-section-1">Focus</a><a href="#en-section-2">Cameras</a><a href="#en-section-3">Report audio</a><a href="#en-section-4">Photo captions</a><a href="#en-section-5">Troubleshooting</a></nav><h1>Kiber Assistant — User manual</h1>
+<h2>Cameras, focus, audio and photo captions</h2>
+<p>This guide covers the features described in the supplied tickets: KiberScope focus controls, voice camera selection, video audio in reports and photo descriptions during voice-note recording.</p>
+<p><strong>Focus requirement:</strong> KiberScope firmware version 2. Availability of the other features depends on the installed app version; the tickets do not specify a minimum app version.</p>
+<h2 id="en-section-1">1. Adjusting the focus</h2>
+<p>The focus controls let you adapt the KiberScope camera to the scene, including on the Narrow model. You can choose automatic or manual focus.</p>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Mode</th><th scope="col">How it works</th><th scope="col">Available controls</th></tr>
+</thead><tbody>
+<tr><td>Automatic</td><td>The camera focuses within the central area outlined by a rectangle.</td><td>Select the autofocus area size.</td></tr>
+<tr><td>Manual</td><td>You set the lens position.</td><td>Slider and five voice presets.</td></tr>
+</tbody></table></div>
+<h3>Switching on autofocus</h3>
+<ol>
+<li>Open the focus controls dialog.</li>
+<li>Enable autofocus with its button, or say <strong>“focus auto”</strong>.</li>
+<li>Place the subject inside the central rectangle.</li>
+<li>If needed, change the autofocus area using one of these commands.</li>
+</ol>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Command</th><th scope="col">Autofocus area</th></tr>
+</thead><tbody>
+<tr><td><strong>focus narrow</strong></td><td>Narrow central area; default area size.</td></tr>
+<tr><td><strong>focus normal</strong></td><td>Normal central area.</td></tr>
+<tr><td><strong>focus wide</strong></td><td>Wider central area.</td></tr>
+</tbody></table></div>
+<p>While autofocus is enabled, the manual focus slider is disabled and manual voice presets cannot be used.</p>
+<h3>Using manual focus</h3>
+<ol>
+<li>In the same dialog, disable autofocus or say <strong>“focus manual”</strong>.</li>
+<li>The autofocus rectangle disappears and the slider becomes available.</li>
+<li>Move the slider until the image is sharp, or use one of the voice presets below.</li>
+<li>To return to automatic focus, say <strong>“focus auto”</strong> or enable the autofocus button.</li>
+</ol>
+<p>The slider ranges from <strong>0.0</strong> (infinity focus) to <strong>13.0</strong> (very close focus). Available values:</p>
+<p><code>0 · 0.25 · 0.5 · 0.75 · 1 · 1.25 · 1.5 · 2 · 3 · 4 · 5 · 6 · 7 · 8 · 9 · 10 · 11 · 12 · 13</code></p>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Command</th><th scope="col">Lens value</th><th scope="col">Approximate distance</th></tr>
+</thead><tbody>
+<tr><td><strong>focus farthest</strong></td><td>0.0</td><td>Infinity; default manual value.</td></tr>
+<tr><td><strong>focus far</strong></td><td>0.5</td><td>About 2 m.</td></tr>
+<tr><td><strong>focus medium</strong></td><td>2</td><td>About 50 cm.</td></tr>
+<tr><td><strong>focus near</strong></td><td>6</td><td>About 17 cm.</td></tr>
+<tr><td><strong>focus nearest</strong></td><td>13</td><td>About 5 cm.</td></tr>
+</tbody></table></div>
+<p><strong>Distances are approximate:</strong> the camera does not guarantee these measurements. They can vary considerably with angle, surroundings and lighting. Always check image sharpness and adjust the slider if necessary. Lens values are not distances in metres.</p>
+<h2 id="en-section-2">2. Switching cameras with your voice</h2>
+<p>You can select the phone's front or rear camera, or the headset camera, using any expression in the corresponding row. The expressions in each row are equivalent alternatives.</p>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Camera</th><th scope="col">English voice commands</th></tr>
+</thead><tbody>
+<tr><td>Phone front camera</td><td><strong>front camera</strong>, <strong>camera in front</strong>, <strong>front-facing camera</strong>, <strong>selfie camera</strong></td></tr>
+<tr><td>Phone rear camera</td><td><strong>main camera</strong>, <strong>camera behind</strong>, <strong>rear camera</strong>, <strong>back camera</strong></td></tr>
+<tr><td>Headset camera</td><td><strong>headset camera</strong>, <strong>glasses camera</strong>, <strong>head camera</strong>, <strong>cyber camera</strong></td></tr>
+</tbody></table></div>
+<h3>Procedure</h3>
+<ol>
+<li>If you want to use the headset camera, make sure the headset is connected.</li>
+<li>Say a command for the camera you want.</li>
+<li>Check that the displayed image and the selected camera in the interface match your choice.</li>
+</ol>
+<p>Voice switching updates the image and interface selection just like switching with the buttons. If the headset is disconnected, the app indicates that the selection is unavailable.</p>
+<h3>Headset camera with phone screen sharing</h3>
+<p><strong>Voice switching to this mode is disabled</strong>, as stated in the ticket update dated 16 October.</p>
+<p>Use the app's touch controls to select this mode, then complete the confirmations requested by the app and the phone's operating system.</p>
+<p>The expressions <strong>“screen camera”</strong>, <strong>“display camera”</strong>, <strong>“shared camera”</strong> and <strong>“dual camera”</strong> do not activate switching to this mode.</p>
+<h2 id="en-section-3">3. Using video audio in reports</h2>
+<p>Audio from recorded videos is used to generate the report alongside voice notes. <strong>You do not need to record a separate audio note to repeat what you already said in a video.</strong></p>
+<ol>
+<li>Record the video with the spoken commentary needed to document the activity.</li>
+<li>Add voice notes if you have further information to provide.</li>
+<li>Generate the report using the app's usual procedure.</li>
+</ol>
+<p>The report uses both recorded video audio and voice notes as sources. A silent video provides no spoken content to use.</p>
+<h2 id="en-section-4">4. Describing a photo during a voice note</h2>
+<p>You can take a photo while recording a voice note. Each photo has a dedicated description interval: the voice note's speech is not used indiscriminately as its caption.</p>
+<h3>Procedure</h3>
+<ol>
+<li>Take the photo during the voice note.</li>
+<li>Watch for the reminder and countdown in the headset for the dedicated description interval.</li>
+<li>Describe the photo you just took during that interval.</li>
+<li>When the interval ends, the previous voice note is automatically restored.</li>
+<li>In the report, your description becomes the caption of the correct photo.</li>
+</ol>
+<p><strong>The pause state is preserved:</strong> if the note was recording, recording resumes; if it was paused, it remains paused.</p>
+<p>Example caption: “Detail of the connector on the left side, with signs of wear near the seal.” Say the description during the countdown, keeping it separate from your general commentary about the activity.</p>
+<p>The tickets do not specify the interval's duration: follow the countdown displayed in the headset.</p>
+<h2 id="en-section-5">5. Troubleshooting</h2>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Situation</th><th scope="col">Check or action</th></tr>
+</thead><tbody>
+<tr><td>The manual slider is disabled.</td><td>Disable autofocus using <strong>focus manual</strong> or the button.</td></tr>
+<tr><td>A distance preset cannot be used.</td><td>Check that manual focus is active.</td></tr>
+<tr><td>The central rectangle is not visible.</td><td>This is normal in manual mode. Enable <strong>focus auto</strong> to use the autofocus area.</td></tr>
+<tr><td>The image is not sharp at the preset's stated distance.</td><td>Distances are approximate. Adjust the slider while checking the image.</td></tr>
+<tr><td>The new focus controls are unavailable.</td><td>Check that the KiberScope uses firmware version 2.</td></tr>
+<tr><td>The headset camera cannot be selected.</td><td>Check that the headset is connected; otherwise the app indicates that it is unavailable.</td></tr>
+<tr><td>“screen camera” does not enable screen sharing.</td><td>Voice switching to this mode is disabled. Use the touch controls and complete the confirmations.</td></tr>
+<tr><td>The voice note remains paused after the caption.</td><td>This is expected if the note was already paused before the photo.</td></tr>
+</tbody></table></div>
+<hr>
+<p><em>Guide based on the supplied tickets, including the 16 October update about camera switching. It describes the intended behaviour in the tickets and does not certify feature availability in a particular app release.</em></p></article>
+<article id="manual-es" lang="es" hidden><nav class="contents" aria-label="Índice"><a href="#es-section-1">Enfoque</a><a href="#es-section-2">Cámaras</a><a href="#es-section-3">Audio del informe</a><a href="#es-section-4">Pies de foto</a><a href="#es-section-5">Solución de problemas</a></nav><h1>Kiber Assistant — Manual de usuario</h1>
+<h2>Cámaras, enfoque, audio y pies de foto</h2>
+<p>Esta guía describe las funciones de los tickets facilitados: controles de enfoque de KiberScope, selección de cámara por voz, audio de los vídeos en los informes y descripción de fotografías durante la grabación de una nota de voz.</p>
+<p><strong>Requisito para el enfoque:</strong> KiberScope con firmware versión 2. La disponibilidad de las demás funciones depende de la versión instalada de la aplicación; los tickets no indican una versión mínima.</p>
+<h2 id="es-section-1">1. Ajustar el enfoque</h2>
+<p>Los controles permiten adaptar el enfoque de la cámara KiberScope a la escena, también en el modelo Narrow. Puedes elegir entre enfoque automático y manual.</p>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Modo</th><th scope="col">Funcionamiento</th><th scope="col">Controles disponibles</th></tr>
+</thead><tbody>
+<tr><td>Automático</td><td>La cámara enfoca dentro de la zona central delimitada por un rectángulo.</td><td>Selección del tamaño de la zona de enfoque automático.</td></tr>
+<tr><td>Manual</td><td>El usuario ajusta la posición de la lente.</td><td>Control deslizante y cinco preajustes por voz.</td></tr>
+</tbody></table></div>
+<h3>Activar el enfoque automático</h3>
+<ol>
+<li>Abre el cuadro de controles de enfoque.</li>
+<li>Activa el enfoque automático con su botón o di <strong>«enfoque automático»</strong>.</li>
+<li>Coloca el objeto dentro del rectángulo central.</li>
+<li>Si es necesario, cambia el tamaño de la zona con uno de estos comandos.</li>
+</ol>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Comando</th><th scope="col">Zona de enfoque automático</th></tr>
+</thead><tbody>
+<tr><td><strong>enfoque estrecho</strong></td><td>Zona central estrecha; tamaño predeterminado.</td></tr>
+<tr><td><strong>enfoque normal</strong></td><td>Zona central de tamaño normal.</td></tr>
+<tr><td><strong>enfoque amplio</strong></td><td>Zona central más amplia.</td></tr>
+</tbody></table></div>
+<p>Mientras el enfoque automático está activo, el control deslizante manual está deshabilitado y no se pueden utilizar los preajustes manuales por voz.</p>
+<h3>Utilizar el enfoque manual</h3>
+<ol>
+<li>En el mismo cuadro, desactiva el enfoque automático o di <strong>«enfoque manual»</strong>.</li>
+<li>El rectángulo desaparece y el control deslizante queda disponible.</li>
+<li>Mueve el control hasta obtener una imagen nítida o utiliza uno de los preajustes por voz indicados a continuación.</li>
+<li>Para volver al enfoque automático, di <strong>«enfoque automático»</strong> o activa su botón.</li>
+</ol>
+<p>El control varía de <strong>0,0</strong> (enfoque al infinito) a <strong>13,0</strong> (enfoque muy cercano). Los valores disponibles son:</p>
+<p><code>0 · 0,25 · 0,5 · 0,75 · 1 · 1,25 · 1,5 · 2 · 3 · 4 · 5 · 6 · 7 · 8 · 9 · 10 · 11 · 12 · 13</code></p>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Comando</th><th scope="col">Valor de la lente</th><th scope="col">Distancia aproximada</th></tr>
+</thead><tbody>
+<tr><td><strong>enfoque remoto</strong></td><td>0,0</td><td>Infinito; valor manual predeterminado.</td></tr>
+<tr><td><strong>enfoque lejano</strong></td><td>0,5</td><td>Unos 2 m.</td></tr>
+<tr><td><strong>enfoque medio</strong></td><td>2</td><td>Unos 50 cm.</td></tr>
+<tr><td><strong>enfoque cercano</strong></td><td>6</td><td>Unos 17 cm.</td></tr>
+<tr><td><strong>enfoque proximo</strong></td><td>13</td><td>Unos 5 cm.</td></tr>
+</tbody></table></div>
+<p><strong>Las distancias son orientativas:</strong> la cámara no garantiza estas medidas. Pueden variar considerablemente según la inclinación, el entorno y la iluminación. Comprueba siempre la nitidez y ajusta el control si es necesario. Los valores de la lente no son distancias expresadas en metros.</p>
+<h2 id="es-section-2">2. Cambiar de cámara con la voz</h2>
+<p>Puedes seleccionar la cámara frontal o trasera del teléfono, o la del visor, pronunciando cualquiera de las expresiones de la fila correspondiente. Las expresiones de una misma fila son alternativas equivalentes.</p>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Cámara</th><th scope="col">Comandos de voz en español</th></tr>
+</thead><tbody>
+<tr><td>Frontal del teléfono</td><td><strong>cámara frontal</strong>, <strong>cámara delantera</strong>, <strong>cámara anterior</strong>, <strong>cámara selfie</strong></td></tr>
+<tr><td>Trasera del teléfono</td><td><strong>cámara principal</strong>, <strong>cámara de atrás</strong>, <strong>cámara trasera</strong>, <strong>cámara posterior</strong></td></tr>
+<tr><td>Visor</td><td><strong>cámara del visor</strong>, <strong>cámara de las gafas</strong>, <strong>cámara del headset</strong>, <strong>cámara ciber</strong></td></tr>
+</tbody></table></div>
+<h3>Procedimiento</h3>
+<ol>
+<li>Si quieres utilizar la cámara del visor, asegúrate de que esté conectado.</li>
+<li>Pronuncia un comando de la cámara que quieras seleccionar.</li>
+<li>Comprueba que la imagen y la selección mostrada en la interfaz correspondan a la cámara elegida.</li>
+</ol>
+<p>El cambio por voz actualiza la imagen y la selección igual que el cambio con los botones. Si el visor no está conectado, la aplicación indica que la selección no está disponible.</p>
+<h3>Cámara del visor con pantalla del teléfono compartida</h3>
+<p><strong>El cambio a este modo mediante comandos de voz está deshabilitado</strong>, según la actualización del 16 de octubre incluida en los tickets.</p>
+<p>Selecciona este modo con los controles táctiles de la aplicación y completa las confirmaciones que soliciten la aplicación y el sistema operativo del teléfono.</p>
+<p>Las expresiones <strong>«cámara de pantalla»</strong>, <strong>«cámara de display»</strong>, <strong>«cámara compartida»</strong> y <strong>«cámara doble»</strong> no activan el cambio a este modo.</p>
+<h2 id="es-section-3">3. Utilizar el audio de los vídeos en el informe</h2>
+<p>El audio de los vídeos grabados se utiliza para generar el informe junto con las notas de voz. <strong>No hace falta grabar una nota de audio aparte para repetir lo que ya has dicho en el vídeo.</strong></p>
+<ol>
+<li>Graba el vídeo con el comentario hablado necesario para documentar la actividad.</li>
+<li>Añade notas de voz si tienes más información que aportar.</li>
+<li>Genera el informe con el procedimiento habitual de la aplicación.</li>
+</ol>
+<p>El informe utiliza como fuentes tanto el audio de los vídeos grabados como las notas de voz. Un vídeo sin audio no aporta contenido hablado.</p>
+<h2 id="es-section-4">4. Describir una foto durante una nota de voz</h2>
+<p>Puedes tomar una fotografía mientras grabas una nota de voz. Cada foto tiene un intervalo específico para describirla: el contenido de la nota de voz no se utiliza indistintamente como pie de foto.</p>
+<h3>Procedimiento</h3>
+<ol>
+<li>Toma la fotografía durante la nota de voz.</li>
+<li>Observa en el visor el recordatorio y la cuenta atrás del intervalo dedicado a la descripción.</li>
+<li>Durante ese intervalo, describe la fotografía que acabas de tomar.</li>
+<li>Al finalizar, la nota de voz anterior se restablece automáticamente.</li>
+<li>En el informe, la descripción se convierte en el pie de foto de la fotografía correcta.</li>
+</ol>
+<p><strong>Se conserva el estado de pausa:</strong> si la nota se estaba grabando, se reanuda; si estaba en pausa, permanece en pausa.</p>
+<p>Ejemplo de pie de foto: «Detalle del conector del lado izquierdo, con signos de desgaste cerca de la junta». Di la descripción durante la cuenta atrás, separándola del comentario general sobre la actividad.</p>
+<p>Los tickets no especifican la duración del intervalo: sigue la cuenta atrás que aparece en el visor.</p>
+<h2 id="es-section-5">5. Solución de problemas</h2>
+<div class="table-scroll" tabindex="0"><table><thead>
+<tr><th scope="col">Situación</th><th scope="col">Comprobación o acción</th></tr>
+</thead><tbody>
+<tr><td>El control manual está deshabilitado.</td><td>Desactiva el enfoque automático con <strong>enfoque manual</strong> o con el botón.</td></tr>
+<tr><td>No se puede utilizar un preajuste de distancia.</td><td>Comprueba que el modo manual esté activo.</td></tr>
+<tr><td>No se ve el rectángulo central.</td><td>Es normal en el modo manual. Activa <strong>enfoque automático</strong> para utilizar la zona de enfoque.</td></tr>
+<tr><td>La imagen no es nítida a la distancia indicada por el preajuste.</td><td>Las distancias son aproximadas. Ajusta el control mientras compruebas la imagen.</td></tr>
+<tr><td>Los nuevos controles de enfoque no están disponibles.</td><td>Comprueba que el KiberScope tenga el firmware versión 2.</td></tr>
+<tr><td>No se puede seleccionar la cámara del visor.</td><td>Comprueba que el visor esté conectado; de lo contrario, la aplicación indica que no está disponible.</td></tr>
+<tr><td>«cámara de pantalla» no activa la pantalla compartida.</td><td>El cambio por voz a este modo está deshabilitado. Utiliza los controles táctiles y completa las confirmaciones.</td></tr>
+<tr><td>La nota de voz sigue en pausa después del pie de foto.</td><td>Es el comportamiento previsto si ya estaba en pausa antes de tomar la foto.</td></tr>
+</tbody></table></div>
+<hr>
+<p><em>Guía elaborada a partir de los tickets facilitados, incluida la actualización del 16 de octubre sobre el cambio de cámara. Describe el comportamiento previsto en los tickets y no certifica la disponibilidad de las funciones en una versión concreta de la aplicación.</em></p></article></main>
+<footer><a id="source-link" href="https://github.com/mcarrozzino/kiber-assistant-manuale">Repository GitHub</a></footer>
+<script>
+const translations={it:{label:'Lingua',title:'Kiber Assistant — Manuale utente',source:'Repository GitHub'},en:{label:'Language',title:'Kiber Assistant — User manual',source:'GitHub repository'},es:{label:'Idioma',title:'Kiber Assistant — Manual de usuario',source:'Repositorio de GitHub'}};
+const selector=document.getElementById('language');
+function setLanguage(lang,updateUrl){
+  if(!translations[lang])lang='it';
+  document.querySelectorAll('article[lang]').forEach(article=>{article.hidden=article.lang!==lang;});
+  selector.value=lang;document.documentElement.lang=lang;document.title=translations[lang].title;
+  document.getElementById('language-label').textContent=translations[lang].label;
+  document.getElementById('source-link').textContent=translations[lang].source;
+  try{localStorage.setItem('kiber-manual-language',lang);}catch{}
+  if(updateUrl){const url=new URL(location.href);url.searchParams.set('lang',lang);url.hash='';history.replaceState(null,'',url);window.scrollTo({top:0});}
+}
+let savedLanguage='it';try{savedLanguage=localStorage.getItem('kiber-manual-language')||'it';}catch{}
+const deepLinkLanguage=(location.hash.match(/^#(it|en|es)-section-/)||[])[1];
+setLanguage(new URLSearchParams(location.search).get('lang')||deepLinkLanguage||savedLanguage,false);
+selector.addEventListener('change',()=>setLanguage(selector.value,true));
+</script>
+</body></html>
